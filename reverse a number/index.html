@@ -7,10 +7,21 @@
 </head>
 <body>
     <script>
-        function reverse(arr){
-            return arr.reverse(arr);
-        }
-        document.write(reverse([1,2,3,4]));
+        // function reverse(arr){
+        //     return arr.reverse(arr);
+        // }
+        // document.write(reverse([1,2,3,4]));
+//         function individualreverse(num){
+//           return Number[num.tostring().split("").reverse().join("")];
+//JavaScript methods are case-sensitive, so toString should be written with a capital 'S'.
+//         }
+//   document.write(individualreverse(123));
+function individualreverse(num) {
+    return Number(num.toString().split("").reverse().join(""));
+}
+
+document.write(individualreverse(123));
+
     </script>
 </body>
 </html>
